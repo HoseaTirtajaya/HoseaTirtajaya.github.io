@@ -17,18 +17,41 @@ section{
     background-image: linear-gradient(to right, #1d4350, #a43931);
 }
 
-.flex-center span{
+.flex-center{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center p, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 64px;
+    color: #D9D9D9;
+    font-weight: bold;
+    font-style: italic;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.flex-center h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D9D9D9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    color: #DFE1E4;
+    justify-content: center;
+    margin-bottom: 64px;
+    font-size: 24px;
+    font-style: oblique;
 }
 
-.flex-center p, h3, li{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-style: italic;
+img{
+    height: 100vh;
+    width: 60%;
 }
 
 .navbar
