@@ -6,6 +6,7 @@ html {
   padding: 0;
   margin: 0;
   outline: none;
+  font-family: "Roboto";
 }
 
 body {
@@ -36,7 +37,7 @@ section {
 
 .flex-center p,
 li {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   margin-top: 8px;
   margin-bottom: 8px;
   margin-left: 64px;
@@ -48,7 +49,7 @@ li {
 }
 
 .flex-center h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   color: #d9d9d9;
   display: flex;
   flex-direction: column;
