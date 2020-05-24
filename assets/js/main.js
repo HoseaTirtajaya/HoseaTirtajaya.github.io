@@ -1,6 +1,6 @@
 const hButton = document.getElementById("HomeButton");
 const aButton = document.getElementById("AboutButton");
-const pButton = document.getElementById("PortfolioButton");
+const pButton = document.getElementById("ContactButton");
 const sect1 = document.querySelector(".blank");
 const sect2 = document.querySelector(".blank2");
 
