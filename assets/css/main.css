@@ -72,7 +72,6 @@ li {
 
 .navbar {
   position: fixed;
-  z-index: 999;
   padding: 20px 30px;
   top: 0;
   left: 0;
@@ -129,4 +128,106 @@ li {
 
 h4 {
   color: whitesmoke;
+}
+
+/* Media Query(Responsive Web) */
+@media only screen and (max-width: 1280px) {
+  .hamburger {
+    display: flex !important;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 32px 32px 0 0;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: #6b28a5;
+    position: relative;
+  }
+
+  .hamburger span::before,
+  .hamburger span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6b28a5;
+  }
+
+  .hamburger span::before {
+    top: -10px;
+  }
+
+  .hamburger span::after {
+    top: 10px;
+  }
+
+  .hamburger.active span {
+    background-color: transparent;
+  }
+
+  .hamburger.active span::before,
+  .hamburger.active span::after {
+    top: 0;
+  }
+
+  .hamburger.active span::before {
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active span::after {
+    transform: rotate(-45deg);
+  }
+
+  .navbar {
+    position: fixed;
+    display: flex;
+    top: -100%;
+    width: 100%;
+    height: 8vh;
+    z-index: 998;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    filter: opacity(75%);
+  }
+
+  .navbar.active {
+    top: 0%;
+    background: linear-gradient(
+      to right,
+      #0f2027,
+      #203a43,
+      #2c5364
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .navbar li input {
+    margin: 16px 0;
+    font-size: 1.2em;
+    font-family: "Roboto";
+    background-color: #213d47;
+  }
+
+  #imagekiri {
+    top: 0;
+  }
+
+  #imagekanan {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  .flex-center {
+    margin-top: 0;
+  }
 }

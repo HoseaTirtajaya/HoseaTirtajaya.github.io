@@ -18,3 +18,20 @@ pButton.addEventListener("click", function () {
   sect2.scrollIntoView();
   alert("Web is under development. Thank you for your understanding");
 });
+
+const hamburgerHandler = function () {
+  const hamburgerBtn = document.querySelector(".hamburger");
+  const menu = document.querySelector(".navbar");
+
+  hamburgerBtn.addEventListener("click", function () {
+    menu.classList.toggle("active");
+    hamburgerBtn.classList.toggle("active");
+  });
+};
+
+const init = function () {
+  // console.log("Hello Perfect Island");
+  hamburgerHandler();
+};
+
+init();
