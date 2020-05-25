@@ -7,6 +7,7 @@ html {
   margin: 0;
   outline: none;
   font-family: "Roboto";
+  transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 body {
@@ -198,6 +199,7 @@ h4 {
     justify-content: center;
     align-items: center;
     filter: opacity(75%);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   }
 
   .navbar.active {
@@ -224,10 +226,38 @@ h4 {
   #imagekanan {
     width: 80px;
     height: 80px;
+  }
+  .kanan {
     font-size: 16px;
   }
-
+  .kanan h4,
+  h3 {
+    font-size: 1em;
+  }
   .flex-center {
     margin-top: 0;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .hamburger {
+      height: 8px;
+      width: 24px;
+      margin: 24px 24px;
+    }
+    .navbar {
+      height: 2vh;
+    }
+    .navbar li input {
+      font-size: 0.8em;
+      background-color: #213d47;
+    }
+    .kanan h4,
+    h3 {
+      font-size: 0.8em;
+    }
+    #imagekiri {
+      height: 100vh;
+      max-width: 75%;
+    }
   }
 }
