@@ -149,7 +149,7 @@ h4 {
   .hamburger span {
     width: 100%;
     height: 2px;
-    background-color: #7815cf;
+    background-color: #25d4eb;
     position: relative;
   }
 
@@ -160,7 +160,7 @@ h4 {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #7815cf;
+    background-color: #25d4eb;
   }
 
   .hamburger span::before {
@@ -242,7 +242,7 @@ h4 {
     .hamburger {
       height: 8px;
       width: 24px;
-      margin: 24px 24px;
+      margin: 24px 8px 0px 24px;
     }
     .navbar {
       height: 2vh;
