@@ -10,12 +10,12 @@ hButton.addEventListener("click", function () {
 });
 
 aButton.addEventListener("click", function () {
-  setTimeout(sect1.scrollIntoView(), 100);
+  sect1.scrollIntoView();
   alert("Web is under development. Thank you for your understanding");
 });
 
 pButton.addEventListener("click", function () {
-  setTimeout(sect2.scrollIntoView(), 100);
+  sect2.scrollIntoView();
   alert("Web is under development. Thank you for your understanding");
 });
 
