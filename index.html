@@ -15,15 +15,15 @@
     />
   </head>
   <body>
-    <ul class="navbar">
-      <li><input type="button" value="Home" id="HomeButton" /></li>
-      <li><input type="button" value="About" id="AboutButton" /></li>
-      <li><input type="button" value="Contact Me!" id="ContactButton" /></li>
-    </ul>
+    <nav class="navbar">
+      <li><a href="#landing">Home</a></li>
+      <li><a href="#blank">About</a></li>
+      <li><a href="#blank2">Contact Me.</a></li>
+    </nav>
     <div class="hamburger">
       <span></span>
     </div>
-    <section class="flex-center landing">
+    <section class="flex-center landing" id="landing">
       <img src="./assets/img/sb-blog-programming.jpg" id="imagekiri" />
       <span>
         <div class="kanan">
@@ -35,8 +35,8 @@
         </div>
       </span>
     </section>
-    <section class="blank" name="blank"></section>
-    <section class="blank2" name="blank2"></section>
+    <section class="blank" name="blank" id="blank"></section>
+    <section class="blank2" name="blank2" id="blank2"></section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>

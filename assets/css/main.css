@@ -90,11 +90,10 @@ li {
   justify-content: flex-end;
 }
 
-.navbar li input {
+.navbar a {
   padding: 0;
   border: 0;
   background: none;
-  background-color: #08258b;
   margin-right: 20px;
   color: red;
   text-decoration: none;
